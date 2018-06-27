@@ -1,0 +1,41 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.people {
+  .container {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+
+  .card{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    cursor: pointer;
+  }
+
+  .persona{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 76px;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-themePrimary;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "wp-people-dd-client-side-solution",
+    "id": "d5c01f37-cec5-4955-97f4-7044c6767e90",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/wp-people-dd.sppkg"
+  }
+}
